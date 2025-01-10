@@ -12,9 +12,9 @@ from types import SimpleNamespace as sn
 import cv2
 import numpy as np
 import numpy.linalg as npla
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
 
 from core import imagelib, pathex
 from core.cv2ex import *
