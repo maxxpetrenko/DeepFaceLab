@@ -152,9 +152,9 @@ class CanvasConfig():
 
         if color_schemes is None:
             color_schemes = [
-                    ColorScheme( QColor(192,0,0,alpha=0), QColor(192,0,0,alpha=72), QColor(192,0,0), 2, QColor(255,255,255), QCursorDB.cross_red ),
-                    ColorScheme( QColor(0,192,0,alpha=0), QColor(0,192,0,alpha=72), QColor(0,192,0), 2, QColor(255,255,255), QCursorDB.cross_green ),
-                    ColorScheme( QColor(0,0,192,alpha=0), QColor(0,0,192,alpha=72), QColor(0,0,192), 2, QColor(255,255,255), QCursorDB.cross_blue ),
+                    ColorScheme( QColor(192,0,0), QColor(192,0,0), QColor(192,0,0), 2, QColor(255,255,255), QCursorDB.cross_red ),
+                    ColorScheme( QColor(0,192,0), QColor(0,192,0), QColor(0,192,0), 2, QColor(255,255,255), QCursorDB.cross_green ),
+                    ColorScheme( QColor(0,0,192), QColor(0,0,192), QColor(0,0,192), 2, QColor(255,255,255), QCursorDB.cross_blue ),
                     ]
         self.color_schemes = color_schemes
 
@@ -941,7 +941,6 @@ class QCanvasOperator(QWidget):
         qp = self.qp
         qp.begin(self)
         qp.setRenderHint(QPainter.Antialiasing)
-        qp.setRenderHint(QPainter.HighQualityAntialiasing)
         qp.setRenderHint(QPainter.SmoothPixmapTransform)
 
         src_rect = QRect(0, 0, *self.img_size)
